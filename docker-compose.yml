@@ -1,0 +1,15 @@
+services:
+  nyaa-addon:
+    build: .
+    container_name: nyaa-stremio-addon
+    restart: unless-stopped
+    ports:
+      - "7000:7000"
+    environment:
+      - PORT=7000
+      - NODE_ENV=production
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,24 @@
+{
+  "name": "nyaa-stremio-addon",
+  "version": "1.0.0",
+  "description": "Stremio addon for streaming torrents from nyaa.si",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "stremio",
+    "addon",
+    "nyaa",
+    "torrent",
+    "anime"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "stremio-addon-sdk": "^1.6.10",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
