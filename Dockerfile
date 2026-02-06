@@ -13,9 +13,9 @@ RUN npm install --production
 # Copier le reste du code source
 COPY . .
 
-# Exposer le port (Hugging Face Spaces utilise 7860 par défaut)
-ENV PORT=7860
-EXPOSE 7860
+# Exposer le port (Standard Koyeb/Cloud)
+ENV PORT=8000
+EXPOSE 8000
 
 # Commande de démarrage
 CMD ["npm", "start"]
